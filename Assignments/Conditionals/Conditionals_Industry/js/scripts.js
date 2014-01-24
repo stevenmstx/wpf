@@ -1,9 +1,9 @@
 // Steven Spencer Jan. 23, 2014 - Conditionals
 // This is to calculate how much should be billed to a client for work done during regular hours and overtime hours.
-var client = prompt("Please enter client's name.");
-var rhours = prompt("How many hours did you work during Regular Business time?");
-var ohours = prompt("Hom many hours did you work outside Regular Business time?");
-var rate = 115;
+var client = prompt("Please enter client's name."); //Prompts user for Client's name.
+var rhours = prompt("How many hours did you work during Regular Business time?"); //Prompts user for number of regular hours worked.
+var ohours = prompt("Hom many hours did you work outside Regular Business time?"); //Prompts user for number of overtime hours worked.
+var rate = 115; //Hourly rate in US Dollars.
 
 if(client == ""){
     console.log("Client's name is required!");
