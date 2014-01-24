@@ -4,9 +4,9 @@ var name = prompt("What is the person's, drinking the coffee, name?"); //Prompts
 if (name == ""){ //Checks to see if name is empty.
     console.log("I need a name!"); //Output in case name is empty.
 }else{ //if name is not empty proceed with calculations.
-    var age = prompt("How old is " + name + "?");
-    if (age == ""){
-        console.log("Enter the age of the person.");
+    var age = prompt("How old is " + name + "?"); //Ask user for the person's age.
+    if (age == ""){ //Checks to see if age is empty.
+        console.log("Enter the age of the person."); //Output in case age is empty.
     }
     if (age >= 21 && age <= 40){
         console.log(name + " requires 3 cups of coffee to get wired!");
