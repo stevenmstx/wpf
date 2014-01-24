@@ -7,24 +7,24 @@ var rate = 115; //Hourly rate in US Dollars.
 
 if(client == ""){ //Checks to see if client's name is empty.
     console.log("Client's name is required!"); //Output if client's name is empty.
-}else if (rhours != "" && ohours != ""){
-    rhours = rhours * rate;
-    ohours = ohours * (rate * 1.5);
-    var result = rhours + ohours;
-    var cost = client + " owes you $" + result;
+}else if (rhours != "" && ohours != ""){ //Calculates if both regular hours and overtime hours are entered.
+    rhours = rhours * rate; //Calculation for total cost of regular hours.
+    ohours = ohours * (rate * 1.5); //Calculation for total cost of overtime hours.
+    var result = rhours + ohours; //Calculation for regular and overtime hours together.
+    var cost = client + " owes you $" + result; //Variable to store output result.
     console.log(cost);
     alert(cost);
-}else if (rhours != "" && ohours == ""){
-    rhours = rhours * rate;
-    var cost = client + " owes you $" + rhours;
+}else if (rhours != "" && ohours == ""){ //Calculates if only regular hours are entered.
+    rhours = rhours * rate; //Calculation for total cost of regular hours.
+    var cost = client + " owes you $" + rhours; //Variable to store output result.
     console.log(cost);
     alert(cost);
-}else if (rhours == "" && ohours != ""){
-    ohours = ohours * (rate * 1.5);
-    var cost = client + " owes you $" + ohours;
+}else if (rhours == "" && ohours != ""){ //Calculates if only overtime hours are entered.
+    ohours = ohours * (rate * 1.5); //Calculation for total cost of overtime hours.
+    var cost = client + " owes you $" + ohours; //Variable to store output result.
     console.log(cost);
     alert(cost);
-}else{
+}else{ //If no amounts are given, then this is outputted.
     console.log("You aren't getting paid!");
     alert("You aren't getting paid!");
 }
