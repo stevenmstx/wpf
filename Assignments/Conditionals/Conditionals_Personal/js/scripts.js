@@ -8,16 +8,16 @@ var maximum = 20;//This is the maximum number of people the rice maker can make 
 
 if (people == "" && eating == "") { //Making sure the prompts are not empty.
     console.log("A value is required!"); //Output if prompts are empty.
-}else if(eating <= maximum){ //Checks to make sure the math makes sense.
-    (eating > people) ? console.log("Imaginary friends do not count. Must be less than People dinning.") : cook = 1; //Output if users entered more rice eaters than people dinning.
+}else if(eating <= maximum){ //Checks to make sure there is enough to go around.
+    (eating > people) ? console.log("Imaginary friends do not count. Must be less than People dinning.") : cook = 1; //True or false checker for imaginary people
     
-    if (cook === 1){
-        rice = eating / 2 * rice;
-        var water = rice / 2;
-        var result = "You need " + rice + " cups of rice, and " + water + " cups of water."
+    if (cook === 1){ //If no imaginary people, continue recipe.
+        rice = eating / 2 * rice; //calculates amount of rice needed.
+        var water = rice / 2; //calculates amount of water needed.
+        var result = "You need " + rice + " cups of rice, and " + water + " cups of water." //Stores calculations and string for output.
     }
-    console.log(result);
-    alert(result);
+    console.log(result); //Outputs to console.
+    alert(result); //Outputs to popup window.
 }else{
     (eating > people) ? console.log("Imaginary friends do not count. Must be less than People dinning.") : console.log("Too many mouths to feed!");
 }
