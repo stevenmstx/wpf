@@ -5,8 +5,8 @@ var rhours = prompt("How many hours did you work during Regular Business time?")
 var ohours = prompt("Hom many hours did you work outside Regular Business time?"); //Prompts user for number of overtime hours worked.
 var rate = 115; //Hourly rate in US Dollars.
 
-if(client == ""){
-    console.log("Client's name is required!");
+if(client == ""){ //Checks to see if client's name is empty.
+    console.log("Client's name is required!"); //Output if client's name is empty.
 }else if (rhours != "" && ohours != ""){
     rhours = rhours * rate;
     ohours = ohours * (rate * 1.5);
