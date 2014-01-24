@@ -18,6 +18,6 @@ if (people == "" && eating == "") { //Making sure the prompts are not empty.
     }
     console.log(result); //Outputs to console.
     alert(result); //Outputs to popup window.
-}else{
+}else{ //if fails by either too many people or too many eaters to people.
     (eating > people) ? console.log("Imaginary friends do not count. Must be less than People dinning.") : console.log("Too many mouths to feed!");
 }
