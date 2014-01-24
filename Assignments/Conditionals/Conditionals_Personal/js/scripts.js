@@ -6,8 +6,8 @@ var cook = 0;//This is a variable to determine true or false later.
 var rice = 2;//This is the minimum number of cups needed.
 var maximum = 20;//This is the maximum number of people the rice maker can make rice for.
 
-if (people == "" && eating == "") { 
-    console.log("A value is required!");
+if (people == "" && eating == "") { //Making sure the prompts are not empty.
+    console.log("A value is required!"); //Output if prompts are empty.
 }else if(eating <= maximum){
     (eating > people) ? console.log("Imaginary friends do not count. Must be less than People dinning.") : cook = 1;
     
