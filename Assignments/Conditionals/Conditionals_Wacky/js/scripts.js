@@ -8,16 +8,16 @@ if (name == ""){ //Checks to see if name is empty.
     if (age == ""){ //Checks to see if age is empty.
         console.log("Enter the age of the person."); //Output in case age is empty.
     }
-    if (age >= 21 && age <= 40){
+    if (age >= 21 && age <= 40){ //Checks to see if person's age is between 21 and 40 years old.
         console.log(name + " requires 3 cups of coffee to get wired!");
     }
-    if (age >= 41){
+    if (age >= 41){ //Checks to see if person's age is older than 40 years old.
         console.log(name + " requires 4 cups of coffee to get wired!");
     }
-    if (age <= 20 && age >= 10){
+    if (age <= 20 && age >= 10){ //Checks to see if person's age is between 10 and 20 years old.
         console.log(name + " requires 2 cups of coffee to get wired!");
     }
-    if (age <= 9 && age != ""){
+    if (age <= 9 && age != ""){ //Checks to see if person's age is younger than 10 years old.
         console.log(name + " requires 0 cups of coffee to get wired!");
     }
 }
