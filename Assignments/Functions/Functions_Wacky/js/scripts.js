@@ -8,7 +8,7 @@ if (height == ""){
 	console.log("Enter a value");
 }else if (light == ""){
 	console.log("Enter a value");
-}else if (light != "Yes" || light != "yes" || light != "No" || light != "no"){
+}else if (light != 'Yes' && light != 'No' && light != 'yes' && light != 'no'){
 	console.log("Enter a Yes or a No only...");
 }else{
 	function lightBulb(height,lswitch){
@@ -30,5 +30,7 @@ if (height == ""){
 			console.log("It will take " + result + " people to screw in the light.");
 		}
 	}
+	
+	lightBulb(height,light);
 }
 	
