@@ -5,7 +5,7 @@ var people = prompt("How many people are eating breakfast?");
 var scram = prompt("How many of them want scrambled?");
 var over = prompt("How many want over-easy?");
 
-function breakfast(num,scambled,overeasy) {
+function breakfast(num,scrambled,overeasy) {
 	var p = null;
 	var s = null;
 	var o = null;
