@@ -16,8 +16,8 @@ function breakfast(num,scrambled,overeasy) {
 	if (test > p) {
 		console.log("No imaginary friends allowed...");
 	}else{
-		var eggs = s * 2 + o;
-		console.log("You need " + eggs + " to make breakfast.");
+		var eggs = parseInt(s,10) * 2 + parseInt(o,10);
+		console.log("You need " + eggs + " eggs to make breakfast.");
 	}
 }
 
